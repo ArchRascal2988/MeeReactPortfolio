@@ -12,12 +12,12 @@ const Header= ()=>{
             </div>
             <div>
                 <Link className="asButton" to= '/work'>
-                    <h2>My Work</h2>
+                    <h2>Work</h2>
                 </Link>
             </div>
             <div>
                 <Link className="asButton" to= '/about'>
-                    <h2>About Me</h2>
+                    <h2>About</h2>
                 </Link>
             </div>
             <div>
@@ -25,19 +25,19 @@ const Header= ()=>{
                     <h2>Resume</h2> 
                 </a>
             </div>
-            <div className='align-end'>
-                <a href="https://github.com/ArchRascal2988" className='iconLink'>
-                    <FaGithub size= '10px'></FaGithub>
-                </a>
-            </div>
-            <div className='align-end'>
-                <a href="https://www.linkedin.com/in/lex-matthews-a45650230/" className='iconLink'>
-                    <FaLinkedin size= '10px'></FaLinkedin>
-                </a>
-            </div>
-            <div className='align-end'>
+            <div>
                 <a href="https://twitter.com/archRascal2988" className='iconLink'>
-                    <FaTwitter size= '10px'></FaTwitter>
+                    <FaTwitter className='icon' size= '40px'></FaTwitter>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ArchRascal2988" className='iconLink'>
+                    <FaGithub className='icon' size= '40px'></FaGithub>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/lex-matthews-a45650230/" className='iconLink'>
+                    <FaLinkedin className='icon' size= '40px'></FaLinkedin>
                 </a>
             </div>
         </header>

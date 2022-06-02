@@ -2,14 +2,14 @@ import React from "react";
 
 const Project= (props)=>{
     return(
-        <div>
-        <a href={props.link}>
-            <img src={props.imgSrc} alt='project'></img>
-            <div>
-                <h3>{props.name}</h3>
-                <h4>{props.languages}</h4>
-            </div>
-        </a>
+        <div className="projCard">
+            <a href={props.link}>
+                <img className="cardImg" src={props.imgSrc} alt={props.name}></img>
+                <div className="card-title">
+                    <h3>{props.name}</h3>
+                    <h4>{props.languages}</h4>
+                </div>
+            </a>
         </div>
     );
 }

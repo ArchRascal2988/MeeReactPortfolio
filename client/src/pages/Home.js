@@ -2,13 +2,14 @@ import React from 'react';
 
 const Home= () =>{
     return (
-        <div>
+        <div className='homeDiv'>
             <div>
-                <img src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
+                <img className='mee' src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
             </div> 
-            <h1>Lex Lake Matthews</h1>
+            <div className='wackyDiv'>
+                <h1 className='welcome'>Lex Matthews' Portfolio</h1>
+            </div>
         </div>
-    
     );
 }
 

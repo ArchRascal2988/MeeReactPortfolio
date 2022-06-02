@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
         <Header />
-        <main>
+        <main className={window.location.pathname==='/' ? "homeMain" : ''}>
           <Routes>
             <Route 
               path="/" 

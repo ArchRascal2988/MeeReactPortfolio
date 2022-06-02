@@ -4,26 +4,176 @@
     --green: #5FF59B;
     --blue: #38C2BD;
     --black: #452D40;
-    --white: #FAE5FA;
+    --white: #edcbed;
 }
 
-.align-end{
-    align-items: flex-end;
+@keyframes wacky{
+    0% {background-position: 0 0;}
+    20% {background-position: 0 100px;}
+    40% {background-position: 0 200px;}
+    60% {background-position: 0 300px;}
+    80% {background-position: 0 400px;}
+    100% {background-position: 0 500px;}
 }
 
 .asButton{
+    position: relative;
     text-decoration: none;
     color: var(--white);
-    font-size: 14px;
+    font-size: 15px;
 }
 
-.asButton:hover{
-
+.asButton h2{
+    position: absolute;
+    width: 100px;
+    bottom: -49px;
+    text-align: center;
+    background-color: var(--black);
+    padding: 5px 8px 5px 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition:padding 400ms;
 }
+
+
+.asButton h2:hover{
+    padding: 8px;
+}
+
+.icon{
+    color: var(--red);
+    transition: color 500ms;
+}
+
+.icon:hover{
+    color: var(--purp)
+}
+
 
 .iconLink{
     width: fit-content;
     height: fit-content;
+}
+
+.cInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.cInfo a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 500ms;
+}
+
+.cInfo a:hover, .cINfo p:hover{
+    color: var(--green);
+}
+
+.mainDiv{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.homeDiv{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wackyDiv{
+    background-color: var(--red);
+    background-image: url("https://i.imgur.com/yP0FHn3.jpg");
+    background-blend-mode: exclusion;
+    height: 400px;
+    width: 820px;
+    top: 20px;
+    right:69px;
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(161deg);
+    z-index: 1;
+    animation: wacky 30s linear infinite alternate-reverse;
+}
+
+.welcome{
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px;
+
+}
+
+.mee{
+    width: 300px;
+    height: 320px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 67px;
+    border: 1px solid var(--green);
+    box-shadow: 0 0 7px 0 var(--purp);
+}
+
+.projCard{
+    width: 350px;
+    height: 350px;
+    position:relative;
+    margin: 15px;
+    border: 1.5px solid var(--green);
+}
+
+.cardImg{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 0;
+    filter: opacity(64%);
+    transition: filter 300ms;
+}
+
+.cardImg:hover{
+    filter: none;
+}
+
+.card-title{
+    position:absolute;
+    width: 110px;
+    bottom: 34px;
+    left: 0.2px;
+    z-index: 1;
+    font-style: oblique;
+    font-size: 15px;
+    color: var(--purp);
+    background-color: var(--black);
+    border: 1px solid var(--green);
+    border-left: 0;
+}
+
+.card-title h4{
+    font-size: 10px;
+}
+
+.bioDiv{
+    margin-top: 100px;
+}
+
+.skillsHeader{
+    font-size: 40px;
+    text-align: center;
+}
+
+.blurb{
+    color: var(--white);
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    text-align: center;
 }
 
 html{
@@ -41,24 +191,42 @@ html{
 }
 
 header{
-    background: linear-gradient(355deg, var(--blue), var(--red));
+    min-height:60px;
+    min-width: 100%;
+    background: linear-gradient(345deg, var(--blue), var(--red));
     color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
-i{
-    width: 14px;
-    height: 14px;
+main{
+    height: 100%;
+    margin-bottom: 200px;
 }
 
+.homeMain{
+    margin-bottom: 0;
+}
 
 footer{
-    width: 100%;
-    position: fixed;
+    height: 80px;
+    min-width: 100%;
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
     bottom: 0;
-    background: linear-gradient(5deg, var(--green), var(--red));
+    background: linear-gradient(15deg, var(--green), var(--red));
     color: var(--purp);
-    
 }
+
+footer h2{
+    color: var(--black);
+    font-size: 30px;
+    height: min-content;
+}
+
