@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
-import Header from './componets/header;'
-import Footer from './componets/footer;'
+import Header from './componets/header/index'
+import Footer from './componets/footer/index'
 
 function App() {
   return (
