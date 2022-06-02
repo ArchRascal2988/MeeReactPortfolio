@@ -19,6 +19,11 @@ const Header= ()=>{
                     <h2>About Me</h2>
                 </Link>
             </div>
+            <div>
+                <a href="">
+                    Resume 
+                </a>
+            </div>
             <div className='align-end'>
                 <a href="https://github.com/ArchRascal2988">
                     <i class="fa fa-github"></i> 

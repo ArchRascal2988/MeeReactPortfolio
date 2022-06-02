@@ -1,23 +1,16 @@
 import React from 'react';
 
+const projNames= ["gitGud", "savepoint", "UT Browser Game", "UT", "UT"];
+const projPaths=['../assets/gitGudSS.png', '../savepoint.jpg', '', '', ''];
+const langs= ["HTML/CSS, JS", "Handlebars/CSS, JS, SQL", '', '', '']
+
 const Work= () =>{
     return (
         <main>
              <div>
-                <div>
-                    <img src=""></img>
-                    <div>
-                        <h3>gitGud</h3>
-                        <h4>HTML5/CSS/JS</h4>
-                    </div>
-                </div>
-                <div>
-                    <img src=""></img>
-                    <div>
-                        <h3>Savepoint</h3>
-                        <h4>HBS/Node.JS/MySQL</h4>
-                    </div>
-                </div>
+                {projNames.map((proj, index)=>{
+                    return <Project name={proj} imgSrc={projPaths[index]} languages={langs[index]} />
+                })}
             </div>
         </main>
     );
