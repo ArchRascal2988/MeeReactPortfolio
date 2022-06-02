@@ -2,6 +2,7 @@ import React from 'react';
 
 const Home= () =>{
     return (
+    <main className='homeMain'>
         <div className='homeDiv'>
             <div>
                 <img className='mee' src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
@@ -10,6 +11,7 @@ const Home= () =>{
                 <h1 className='welcome'>Lex Matthews' Portfolio</h1>
             </div>
         </div>
+    </main>
     );
 }
 

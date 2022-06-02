@@ -8,12 +8,14 @@ const langs= ["HTML/CSS, JS", "Handlebars/CSS, JS, SQL", 'wip', 'wip', 'wip']
 
 const Work= () =>{
     return (
+    <main>
         <div className="mainDiv">
             {projNames.map((proj, index)=>{
                 return <Project key={index}
                 name={proj} imgSrc={imgPaths[index]} link={projLinks[index]} languages={langs[index]} />
             })}
         </div>
+    </main>
     );
 }
 

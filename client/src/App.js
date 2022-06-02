@@ -13,7 +13,6 @@ function App() {
   return (
     <Router>
         <Header />
-        <main className={window.location.pathname==='/' ? "homeMain" : ''}>
           <Routes>
             <Route 
               path="/" 
@@ -28,7 +27,6 @@ function App() {
               element={<About />} 
             />
           </Routes>
-        </main>
         <Footer />
     </Router>
   );
