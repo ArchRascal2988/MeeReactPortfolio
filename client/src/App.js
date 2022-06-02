@@ -4,15 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
-import Header from './componets/header/index'
-import Footer from './componets/footer/index'
+import Header from './componets/header/index';
+import Footer from './componets/footer/index';
+
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="flex-column justify-flex-start min-100-vh">
         <Header />
-        <div className="container">
+        <main>
           <Routes>
             <Route 
               path="/" 
@@ -27,9 +28,8 @@ function App() {
               element={<About />} 
             />
           </Routes>
-        </div>
+        </main>
         <Footer />
-      </div>
     </Router>
   );
 }

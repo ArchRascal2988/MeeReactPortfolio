@@ -2,10 +2,7 @@ import React from "react";
 
 const Bio= ()=>{
     return( 
-        <section>
-            <div>
-                <img src= '../../assets/profilePic.jpg'></img>
-            </div>  
+        <section> 
             <div>
                 <p>
                     Hi! My name is Lex and I'm a 21 year old junior full-stack web dev and computer science student.
@@ -13,8 +10,6 @@ const Bio= ()=>{
                     Ever since, I've been fascinated by art, technology, and any other inbetweens, and have strived to make that my career.    
                     I aim to create stellar projects, adapt to whatever the situation calls, and to animate visions that capture others the same way they did me.
                 </p>
-                <br/>
-                <a href=''>Check out my Resume!</a>
             </div>
         </section>   
     );

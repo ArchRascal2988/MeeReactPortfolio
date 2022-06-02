@@ -3,11 +3,9 @@ import Bio from '../componets/bio/index'
 
 const About= () =>{
     return (
-        <main>
-            <div>
-                <Bio />
-            </div>
-        </main>
+        <div>
+            <Bio />
+        </div>
     );
 }
 

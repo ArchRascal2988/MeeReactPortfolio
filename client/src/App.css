@@ -1,0 +1,64 @@
+:root{
+    --red: #F61B62;
+    --purp: #C438A9;
+    --green: #5FF59B;
+    --blue: #38C2BD;
+    --black: #452D40;
+    --white: #FAE5FA;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.asButton{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.asButton:hover{
+
+}
+
+.iconLink{
+    width: fit-content;
+    height: fit-content;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+#root, body{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--purp)
+}
+
+header{
+    background: linear-gradient(355deg, var(--blue), var(--red));
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+i{
+    width: 14px;
+    height: 14px;
+}
+
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(5deg, var(--green), var(--red));
+    color: var(--purp);
+    
+}

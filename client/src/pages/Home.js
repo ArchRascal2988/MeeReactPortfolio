@@ -2,11 +2,13 @@ import React from 'react';
 
 const Home= () =>{
     return (
-        <main>
+        <div>
             <div>
-                <h1>Lex Lake Matthews</h1>
-            </div>
-        </main>
+                <img src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
+            </div> 
+            <h1>Lex Lake Matthews</h1>
+        </div>
+    
     );
 }
 

@@ -4,7 +4,7 @@ const Project= (props)=>{
     return(
         <div>
         <a href={props.link}>
-            <img src={props.imgSrc}></img>
+            <img src={props.imgSrc} alt='project'></img>
             <div>
                 <h3>{props.name}</h3>
                 <h4>{props.languages}</h4>
