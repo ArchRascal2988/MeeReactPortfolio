@@ -1,22 +1,25 @@
 {
-  "name": "portfolio",
+  "name": "llm-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "./client/src/index.js",
+  "homepage": "https://archrascal2988.github.io",
   "scripts": {
     "start": "cd ./client && npm start",
+    "predeploy": "cd ./client && npm run build",
+    "deploy": "gh-pages -d build",
     "install": " cd ./client && npm i"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArchRascal2988/Portfolio2.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^7.2.1",
     "create-react-app": "^5.0.1",
     "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
