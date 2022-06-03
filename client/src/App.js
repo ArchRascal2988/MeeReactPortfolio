@@ -9,9 +9,12 @@ import Footer from './componets/footer/index';
 
 import './App.css';
 
+
+const history = createBrowserHistory({ basename: '/your-base-name' });
+
 function App() {
   return (
-    <Router>
+    <Router history={history}>
         <Header />
           <Routes>
             <Route 
