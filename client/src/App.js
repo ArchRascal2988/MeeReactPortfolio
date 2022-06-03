@@ -12,7 +12,7 @@ import { createBrowserHistory } from 'history';
 import './App.css';
 
 
-const history = createBrowserHistory({ basename: '/your-base-name' });
+const history = createBrowserHistory({ basename: '/ProfPortfolio' });
 
 function App() {
   return (
