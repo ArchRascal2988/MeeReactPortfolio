@@ -2,7 +2,7 @@
   "name": "llm-portfolio",
   "version": "1.0.0",
   "main": "./client/src/index.js",
-  "homepage": "https://archrascal2988.github.io",
+  "homepage": "https://archrascal2988.github.io/ProfPortfolio",
   "scripts": {
     "start": "cd ./client && npm start",
     "build": "cd ./client && npm run build",
