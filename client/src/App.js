@@ -7,6 +7,8 @@ import About from './pages/About';
 import Header from './componets/header/index';
 import Footer from './componets/footer/index';
 
+import { History } from 'history';
+
 import './App.css';
 
 
