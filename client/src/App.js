@@ -7,16 +7,11 @@ import About from './pages/About';
 import Header from './componets/header/index';
 import Footer from './componets/footer/index';
 
-import { createBrowserHistory } from 'history';
-
 import './App.css';
-
-
-const history = createBrowserHistory({ basename: '/ProfPortfolio' });
 
 function App() {
   return (
-    <Router history={history}>
+    <Router>
         <Header />
           <Routes>
             <Route 

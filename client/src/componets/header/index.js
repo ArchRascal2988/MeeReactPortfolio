@@ -21,7 +21,7 @@ const Header= ()=>{
                 </Link>
             </div>
             <div>
-                <a className="asButton" href="">
+                <a className="asButton" href="https://docs.google.com/document/d/1JXXHUxPW8-q4mk3r9W5hfUCgpW04xrrm/edit?usp=sharing&ouid=101507926116752176818&rtpof=true&sd=true">
                     <h2>Resume</h2> 
                 </a>
             </div>
