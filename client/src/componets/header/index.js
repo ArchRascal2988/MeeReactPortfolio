@@ -6,17 +6,17 @@ const Header= ()=>{
     return (
         <header>
             <div>
-                <Link className="asButton" to= '/'>
+                <Link className="asButton" to= '/Lex_Lake_Matthews/'>
                     <h2>Home</h2>
                 </Link>
             </div>
             <div>
-                <Link className="asButton" to= '/work'>
+                <Link className="asButton" to= '/Lex_Lake_Matthews/work'>
                     <h2>Work</h2>
                 </Link>
             </div>
             <div>
-                <Link className="asButton" to= '/about'>
+                <Link className="asButton" to= '/Lex_Lake_Matthews/about'>
                     <h2>About</h2>
                 </Link>
             </div>
