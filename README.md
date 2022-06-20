@@ -1,3 +1,4 @@
 # Portfolio
+Hello! This is the code repo for my professional portfolio.
 
-Sooo this is my professional very business portfolio. Showcased items include: projects, skills, and my mean mug ;).
+Take a look:
