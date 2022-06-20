@@ -15,15 +15,15 @@ function App() {
         <Header />
           <Routes>
             <Route 
-              path="/" 
+              path="/Lex_Lake_Matthews/" 
               element={<Home />} 
             />
             <Route 
-              path="/work" 
+              path="/Lex_Lake_Matthews/work" 
               element={<Work />} 
             />
             <Route 
-              path="/about" 
+              path="/Lex_Lake_Matthews/about" 
               element={<About />} 
             />
           </Routes>
