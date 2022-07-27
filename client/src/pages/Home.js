@@ -8,7 +8,7 @@ const Home= () =>{
                 <img className='mee' src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
             </div> 
             <div className='wackyDiv'>
-                <h1 className='welcome'>Lex Matthews' Portfolio</h1>
+                <h1 className='welcome'>Lex Lake Matthews</h1>
             </div>
         </div>
     </main>

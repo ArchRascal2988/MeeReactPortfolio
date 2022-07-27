@@ -7,6 +7,9 @@
     --white: #edcbed;
 }
 
+#root{
+    min-height: 100%;
+}
 
 @keyframes wacky{
     0% {background-position: 0 0;}
@@ -39,6 +42,7 @@
 
 .asButton h2:hover{
     padding: 8px;
+    color: var(--green);
 }
 
 .icon{
@@ -47,7 +51,7 @@
 }
 
 .icon:hover{
-    color: var(--purp)
+    color: var(--green)
 }
 
 
@@ -71,7 +75,7 @@
 }
 
 .cInfo a:hover, .cINfo p:hover{
-    color: var(--green);
+    color: var(--purp);
 }
 
 .mainDiv{
@@ -196,7 +200,7 @@ header{
     background: var(--blue);
     color: var(--white);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -222,21 +226,26 @@ main{
 footer{
     height: 80px;
     min-width: 100%;
-    position: sticky;
+    align-self: flex-end;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     z-index: 2;
     bottom: 0;
     background: linear-gradient(15deg, var(--green), var(--red));
-    color: var(--purp);
+    color: var(--white);
 }
 
-footer h2{
-    color: var(--black);
-    font-size: 30px;
-    height: min-content;
+
+.mee2{
+    display: none;
+    width: 380px;
+    height: 450px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: 1px solid var(--green);
+    box-shadow: 0 0 7px 0 var(--purp);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -275,14 +284,30 @@ footer h2{
 
     .wackyDiv{
 
-        height: 450px;
-        width: 400px;
-        margin: 30px;
+        height: 500px;
+        width: 350px;
     }
 
     .mee{
-        width: 380px;
-        height: 450px;
-        margin: 30px;
+        display: none;
+    }
+
+    .mee2{
+        display: block;
+    }
+
+    .links{
+        margin-right: 10px;
+    }
+
+    .asButton{
+        font-size: 9px;
+    }
+    
+    .asButton h2{
+        position: absolute;
+        width: 80px;
+        bottom: -49px;
+        padding: 5px 6px 5px 8px;
     }
 }

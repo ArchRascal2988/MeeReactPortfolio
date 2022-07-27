@@ -3,7 +3,9 @@ import React from "react";
 const Bio= ()=>{
     return( 
         <section> 
+            
             <div className="bioDiv">
+            <img className='mee2' src= 'https://i.imgur.com/8xWGbVs.jpg' alt='myHeadshot'></img>
                 <p className="blurb">
                     Hi! My name is Lex and I'm a 21 year old junior full-stack web dev and computer science student, 
                     currently located in Datyona Beach, FL (Looking to relocate to Jacksonville).
@@ -18,4 +20,4 @@ const Bio= ()=>{
     );
 }
 
-export default Bio
+export default Bio;
