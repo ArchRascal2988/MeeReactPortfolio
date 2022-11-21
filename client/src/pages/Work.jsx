@@ -7,6 +7,8 @@ const projLinks=['https://mysterious-atoll-10250.herokuapp.com/landing/login', '
 const langs= ["HTML/CSS, JS", "Handlebars/CSS, JS, SQL", 'wip', 'wip', 'wip']
 
 const Work= () =>{
+    const [focusProj, setProject] = useState(``);
+
     return (
     <main>
         <div className="mainDiv">
@@ -14,6 +16,9 @@ const Work= () =>{
                 return <Project key={index}
                 name={proj} imgSrc={imgPaths[index]} link={projLinks[index]} languages={langs[index]} />
             })}
+        </div>
+        <div id='focusDiv'>
+            <CurrentP project={focusProj}></CurrentP>
         </div>
     </main>
     );
