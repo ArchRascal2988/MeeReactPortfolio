@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer= ()=>{
     return (
-        <footer>
+        <footer id='footer'>
             <div className='cInfo'>
                 <p>(386)316-9096</p>
                 <a href= "blankmass@hotmail.com">blankmass@hotmail.com</a>                

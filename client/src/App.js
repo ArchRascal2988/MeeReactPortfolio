@@ -7,7 +7,7 @@ import About from './pages/About';
 import Header from './componets/header/index';
 import Footer from './componets/footer/index';
 
-import './pages/App.css'
+import './App.css'
 
 function App() {
   return (
