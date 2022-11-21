@@ -1,5 +1,6 @@
-import React from 'react';
-import Project from '../componets/projectCard'
+import React, {useState} from 'react';
+import Project from '../componets/projectCard';
+import ProjectFocus from '../componets/projectFocused';
 
 const projNames= ["gitGud", "savepoint", "UT Browser Game", "UT", "UT"];
 const imgPaths=['https://i.imgur.com/FtKs4Bp.png', 'https://i.imgur.com/a3C3hZm.jpg', 'https://i.imgur.com/5B5eoWd.png', 'https://i.imgur.com/5B5eoWd.png', 'https://i.imgur.com/5B5eoWd.png'];
@@ -18,7 +19,7 @@ const Work= () =>{
             })}
         </div>
         <div id='focusDiv'>
-            <CurrentP project={focusProj}></CurrentP>
+            <ProjectFocus project={focusProj}></ProjectFocus>
         </div>
     </main>
     );
