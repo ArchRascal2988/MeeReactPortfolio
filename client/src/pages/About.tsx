@@ -1,6 +1,6 @@
 import React from 'react';
-import Bio from '../componets/bio/index';
-import Skills from '../componets/skills';
+import Bio from '../componets/Bio';
+import Skills from '../componets/Skills';
 
 const About= () =>{
     return (
