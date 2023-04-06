@@ -4,7 +4,7 @@ const ProjectFocus= ({project})=>{
 
 
     return project ? (
-        <div className='div-lg'>
+        <div className='div-sm'>
 
         </div>
     ) : (

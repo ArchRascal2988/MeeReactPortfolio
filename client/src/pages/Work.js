@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import Project from '../componets/ProjectCard';
 import ProjectFocus from '../componets/ProjectFocus';
+import sp from "../assets/savepoint.jpg";
+import gg from "../assets/gitGudSS.png";
+import placeholder from "../assets/placeholder.jpg";
 
-
-const projects:{name:string, coverUrl:string,  description:string, ghUrl:string[] ,deployedUrl:string[], techs:string[]}[]=[
+const projects=[
     {
         name:'gitGud',
-        coverUrl: 'https://i.imgur.com/FtKs4Bp.png',
+        coverSrc: gg,
         ghUrl: ['https://github.com/ArchRascal2988/gitGud'],
         deployedUrl: ['https://canro2b.github.io/gitGud/'],
         description: 'My first web application! Very rudimentary, but it is a single page app inteded to be a free game recommender integrated with twitch.',
@@ -14,7 +16,7 @@ const projects:{name:string, coverUrl:string,  description:string, ghUrl:string[
     },
     {
         name: 'savepoint',
-        coverUrl: 'https://i.imgur.com/a3C3hZm.jpg',
+        coverSrc: sp,
         ghUrl: ['https://github.com/ArchRascal2988/savepoint'],
         deployedUrl: ['workin on it'],
         description: 'Letterboxed but for videogames',
@@ -22,15 +24,15 @@ const projects:{name:string, coverUrl:string,  description:string, ghUrl:string[
     },
     {
         name: 'The Scenic Route',
-        coverUrl: 'workin on it',
+        coverSrc: placeholder,
         ghUrl: ['https://github.com/ArchRascal2988/theScenicRoute'],
         deployedUrl: ['workin on it'],
         description: 'App for user curated hiking/biking trails',
-        techs: ['HTML/CSS', 'Handlebars', 'Node.JS', 'SQL', 'Open source apis: IGDB(Used to seed DB)']
+        techs: ['HTML/CSS', 'React', 'GraphQL', 'Node.JS', 'MongoDB', 'Mapbox']
     },
     {
         name: 'ToDo Apps',
-        coverUrl: 'workin on it',
+        coverSrc: placeholder,
         ghUrl: ['https://github.com/ArchRascal2988/ToDo_React-JS' ,'https://github.com/ArchRascal2988/ToDo_C-Sharp', 'https://github.com/ArchRascal2988/ToDo_Java'],
         deployedUrl: ['workin on it'],
         description: 'In the interest of both demonstrating basic web dev skills and for personal learning, I made todo apps in a variety of languages/frameworks. All following MVC and all running off a shared database.',
@@ -38,19 +40,21 @@ const projects:{name:string, coverUrl:string,  description:string, ghUrl:string[
     },
     {
         name: 'LAMP server',
-        coverUrl: 'workin on it',
-        ghUrl: ['workin on it'],
+        coverSrc: placeholder,
+        ghUrl: ['n/a'],
         deployedUrl: ['n/a'],
-        description: 'A personal web server, currently hosting this portfolio!',
-        techs: []
+        description: 'RPI 4 as a LAMP server so i can host my own projects eventually.',
+        techs: ['Ubunut Server', 'Apache Server', 'MySQL', 'Python'],
+        status: "In Progress"
     },
     {
-        name: 'TFT Builder',
-        coverUrl: 'workin on it',
-        ghUrl: ["]https://github.com/ArchRascal2988/TFTBuilder"],
+        name: 'TFT Companion App',
+        coverSrc: placeholder,
+        ghUrl: ["https://github.com/ArchRascal2988/TFTBuilder"],
         deployedUrl: ['workin on it'],
-        description: 'In the interest of both demonstrating basic web dev skills and for personal learning, I made todo apps in a variety of languages/frameworks. All following MVC and all running off a shared database.',
-        techs: ['HTML/CSS', 'React.js', 'Node.JS', 'GraphQL', 'MongoDB', 'Tailwind/DaisyUI']
+        description: '',
+        techs: ['HTML/CSS', 'React.js', 'Node.JS', 'GraphQL', 'MongoDB', 'Tailwind/DaisyUI'],
+        status: "In Progress"
     }
 ]
 
@@ -59,16 +63,16 @@ const projects:{name:string, coverUrl:string,  description:string, ghUrl:string[
 const Work= () =>{
     const [focusProj, setProject] = useState({});
 
-    const changeProj= (index:number)=>{
+    const changeProj= (index)=>{
         setProject(projects[index]);
     }
 
     return (
     <main>
-        <div className="div-lg">
+        <div className="div-lg scrollable">
             {projects.map((proj, index)=>{
-                return <Project key={index}
-                name={proj.name} imgSrc={proj.coverUrl} clickHandler={changeProj}/>
+                return <Project key={index} i={index}
+                name={proj.name} imgSrc={proj.coverSrc} clickHandler={changeProj}/>
             })}
         </div>
         <ProjectFocus project={focusProj}></ProjectFocus>
