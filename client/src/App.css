@@ -161,7 +161,7 @@
     display: flex;
     flex-flow: row nowrap;
     margin: 5rem 0;
-    height: 50rem;
+    height: 23.5rem;
 }
 
 .div-sm{
@@ -174,7 +174,7 @@
 }
 
 .scrollable{
-    scroll-behavior: smooth;
+    overflow-y: none;
     overflow-x: auto;
     width: auto;
 }
