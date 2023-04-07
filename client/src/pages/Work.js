@@ -12,7 +12,7 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/gitGud'],
         deployedUrl: ['https://canro2b.github.io/gitGud/'],
         description: 'My first web application! Very rudimentary, but it is a single page app inteded to be a free game recommender integrated with twitch.',
-        techs: ['HTML/CSS', 'JS', 'Open source apis: Twitch, Free2Game']
+        techs: ['HTML/CSS', 'JS', 'Open source APIs: Twitch, Free2Game']
     },
     {
         name: 'savepoint',
@@ -20,7 +20,7 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/savepoint'],
         deployedUrl: ['workin on it'],
         description: 'Letterboxed but for videogames',
-        techs: ['HTML/CSS', 'Bootstrap', 'Handlebars', 'Node.JS', 'SQL', 'Open source apis: IGDB(Used to seed DB)']
+        techs: ['HTML/CSS', 'Bootstrap', 'Handlebars', 'Node.JS', 'SQL', 'Open source APIs: IGDB(Used to seed DB)']
     },
     {
         name: 'The Scenic Route',

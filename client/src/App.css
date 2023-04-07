@@ -140,6 +140,10 @@
     border: 1.5px solid var(--green);
 }
 
+.cardContainer:hover{
+    cursor: pointer;
+}
+
 .cardImg{
     width: 19.9rem;
     height: 19.9rem;
@@ -173,7 +177,7 @@
 .div-lg{
     display: flex;
     flex-flow: row nowrap;
-    margin: 5rem 0;
+    margin: 3.5rem 0;
     height: 23.5rem;
 }
 
@@ -183,7 +187,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 32.5rem;
+    height: 26.5rem;
 }
 
 .scrollable{
