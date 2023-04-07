@@ -1,5 +1,7 @@
 import React from "react";
-import pfp from '../assets/ProfilePic.jpg'
+import pfp from '../assets/ProfilePic.jpg';
+
+import Skills from '../componets/Skills';
 
 const Bio= ()=>{
     return( 
@@ -13,6 +15,8 @@ const Bio= ()=>{
                     Programming is one of the coolest things in the world to me and I'm constantly building and trying to learn more, feel free to take a look at my work (And maybe you think we should work together..).
                 </p>
             </div>
+            
+            <Skills />
         </section>   
     );
 }

@@ -1,10 +1,23 @@
 :root{
     --red: #F61B62;
-    --purp: #C438A9;
+    --purp: #c438a8be;
     --green: #5FF59B;
     --blue: #38c2bdab;
     --black: #452D40;
     --white: #edcbed;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    background-color: var(--purp);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #349792ee;
+}
+
+::-webkit-scrollbar-track-piece{
+    color: var(--white);
 }
 
 #root{
@@ -226,7 +239,7 @@ html{
 header{
     min-height:60px;
     min-width: 100%;
-    background: var(--blue);
+    background-color: var(--blue);
     color: var(--white);
     display: flex;
     flex-flow: row nowrap;
