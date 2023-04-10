@@ -7,17 +7,17 @@ const Header= ()=>{
         <header>
             <section className='links'>
                 <div>
-                    <Link className="asButton" to= '/Lex_Lake_Matthews/'>
+                    <Link className="asButton" to= '/MeeReactPortfolio/'>
                         <h2>Home</h2>
                     </Link>
                 </div>
                 <div>
-                    <Link className="asButton" to= '/Lex_Lake_Matthews/work'>
+                    <Link className="asButton" to= '/MeeReactPortfolio/work'>
                         <h2>Work</h2>
                     </Link>
                 </div>
                 <div>
-                    <Link className="asButton" to= '/Lex_Lake_Matthews/about'>
+                    <Link className="asButton" to= '/MeeReactPortfolio/about'>
                         <h2>About</h2>
                     </Link>
                 </div>
