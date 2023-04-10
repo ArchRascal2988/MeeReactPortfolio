@@ -133,7 +133,7 @@
 }
 
 .cardContainer{
-    width: 25rem;
+    width: 20rem;
     height: 20rem;
     position:relative;
     margin: 1rem;
@@ -177,8 +177,8 @@
 .div-lg{
     display: flex;
     flex-flow: row nowrap;
-    margin: 3.5rem 0;
-    height: 23.5rem;
+    margin: 1.5rem 0;
+    height: 22.5rem;
 }
 
 .div-sm{
@@ -188,7 +188,29 @@
     justify-content: center;
     align-items: center;
     height: 26.5rem;
+    margin: 1.5rem 0 3rem 0;
 }
+
+#focusCard{
+    background-color: var(--blue);
+    color: var(--white);
+    opacity: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: .1rem;
+    padding: .7rem;
+}
+
+#focusCard p{
+    margin: .5rem;
+}
+
+#focusCard h4{
+    color: var(--black);
+}
+
 
 .scrollable{
     overflow-y: none;
@@ -199,7 +221,7 @@
 .bioDiv{
     margin-top: 100px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -210,8 +232,8 @@
 }
 
 #mee{
-    width: 55vh;
-    height: 70vh;
+    width: 20rem;
+    height: 22rem;
     border-radius: 5px;
     margin-left: 30px;
     border: 1px solid var(--green);
@@ -268,6 +290,14 @@ main{
     margin-bottom: 0;
 }
 
+#skillsB{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
 footer{
     height: 10rem;
     min-width: 100%;
@@ -302,6 +332,18 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar{
+        width: .8rem;
+    }
+   
+    .cardContainer{
+        height: 19rem;
+    }
+
+    .cardImg{
+        height: 18.9rem;
+    }
+
     .homeDiv{
         flex-direction: column-reverse;
         justify-content: space-around;

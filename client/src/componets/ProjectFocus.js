@@ -8,18 +8,21 @@ const ProjectFocus= ({project})=>{
         </div>
     ) : (
         <div className='div-sm'>
-        <h4>{project.name}</h4>
-        <p>{project.description}</p>
-        <section>
-            <h5>Technology stack: </h5>
-            {project.techs.map((el, index)=> <p key={index}>{el}</p>)}
-        </section>
-       
-        <section>
-            <a href={project.ghUrl}>Deployment</a>
-            <a href={project.deployedUrl}>Repo</a>
-        </section>
-    </div>
+            <div id='focusCard'>
+                <h4>{project.name}</h4>
+                <p>{project.description}</p>
+                <p> Status: {project.status}</p>
+                <section>
+                    <h4>Technology stack: </h4>
+                    {project.techs.map((el, index)=> <p key={index}>{el}</p>)}
+                </section>
+                <section>
+                    <a href={project.ghUrl}>Repo</a>
+                    <br></br>
+                    <a href={project.deployedUrl==="workin on it" ? "" : project.deployedUrl}>{project.deployedUrl==="workin on it" ? "Still need to deploy, check back later." : "Deployment"}</a>
+                </section>
+            </div>
+        </div>
     );
 }
 

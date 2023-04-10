@@ -12,7 +12,8 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/gitGud'],
         deployedUrl: ['https://canro2b.github.io/gitGud/'],
         description: 'My first web application! Very rudimentary, but it is a single page app inteded to be a free game recommender integrated with twitch.',
-        techs: ['HTML/CSS', 'JS', 'Open source APIs: Twitch, Free2Game']
+        techs: ['HTML/CSS', 'JS', 'Open source APIs: Twitch, Free2Game'],
+        status: "Done"
     },
     {
         name: 'savepoint',
@@ -20,7 +21,8 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/savepoint'],
         deployedUrl: ['workin on it'],
         description: 'Letterboxed but for videogames',
-        techs: ['HTML/CSS', 'Bootstrap', 'Handlebars', 'Node.JS', 'SQL', 'Open source APIs: IGDB(Used to seed DB)']
+        techs: ['HTML/CSS', 'Bootstrap', 'Handlebars', 'Node.JS', 'SQL', 'Open source APIs: IGDB(Used to seed DB)'],
+        status: "Done but need to deploy"
     },
     {
         name: 'The Scenic Route',
@@ -28,7 +30,8 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/theScenicRoute'],
         deployedUrl: ['workin on it'],
         description: 'App for user curated hiking/biking trails',
-        techs: ['HTML/CSS', 'React', 'GraphQL', 'Node.JS', 'MongoDB', 'Mapbox']
+        techs: ['HTML/CSS', 'React', 'GraphQL', 'Node.JS', 'MongoDB', 'Mapbox'],
+        status: "Done but need to deploy"
     },
     {
         name: 'ToDo Apps',
@@ -36,24 +39,25 @@ const projects=[
         ghUrl: ['https://github.com/ArchRascal2988/ToDo_React-JS' ,'https://github.com/ArchRascal2988/ToDo_C-Sharp', 'https://github.com/ArchRascal2988/ToDo_Java'],
         deployedUrl: ['workin on it'],
         description: 'In the interest of both demonstrating basic web dev skills and for personal learning, I made todo apps in a variety of languages/frameworks. All following MVC and all running off a shared database.',
-        techs: ['HTML/CSS', 'React.js', 'Node.JS', 'C#', '.NET MVC', 'Java', 'Spring', 'MongoDB', ]
+        techs: ['HTML/CSS', 'React', 'Node.JS', 'C#', '.NET MVC', 'Java', 'Spring', 'MongoDB', ],
+        status: "In progress"
     },
-    {
-        name: 'LAMP server',
-        coverSrc: placeholder,
-        ghUrl: ['n/a'],
-        deployedUrl: ['n/a'],
-        description: 'RPI 4 as a LAMP server so i can host my own projects eventually.',
-        techs: ['Ubunut Server', 'Apache Server', 'MySQL', 'Python'],
-        status: "In Progress"
-    },
+    // {
+    //     name: 'LAMP server',
+    //     coverSrc: placeholder,
+    //     ghUrl: ['n/a'],
+    //     deployedUrl: ['n/a'],
+    //     description: 'RPI 4 as a LAMP server so i can host my own projects eventually.',
+    //     techs: ['Ubunut Server', 'Apache Server', 'MySQL', 'Python'],
+    //     status: "In Progress"
+    // },
     {
         name: 'TFT Companion App',
         coverSrc: placeholder,
         ghUrl: ["https://github.com/ArchRascal2988/TFTBuilder"],
-        deployedUrl: ['workin on it'],
-        description: '',
-        techs: ['HTML/CSS', 'React.js', 'Node.JS', 'GraphQL', 'MongoDB', 'Tailwind/DaisyUI'],
+        deployedUrl: 'workin on it',
+        description: 'A companion app for the game Team Fight Tacticts. Users can make, save, and share team compositons.',
+        techs: ['HTML/CSS', 'React Redux', 'Node.JS', 'GraphQL', 'MongoDB', 'Tailwind/DaisyUI'],
         status: "In Progress"
     }
 ]
