@@ -2,12 +2,12 @@
   "name": "llm-portfolio",
   "version": "1.0.0",
   "main": "./client/src/index.js",
-  "homepage": "https://archrascal2988.github.io/ProfPortfolio",
+  "homepage": "https://archrascal2988.github.io/MeeReactPortfolio",
   "scripts": {
     "start": "cd ./client && npm start",
     "build": "cd ./client && npm run build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": " cd ./client && gh-pages -d build",
     "install": " cd ./client && npm i"
   },
   "repository": {
