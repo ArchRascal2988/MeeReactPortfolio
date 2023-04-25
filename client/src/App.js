@@ -15,15 +15,15 @@ function App() {
         <Header />
           <Routes>
             <Route 
-              path="/MeeReactPortfolio/" 
+              path="/Portfolio/" 
               element={<Home />} 
             />
             <Route 
-              path="/MeeReactPortfolio/work" 
+              path="/Portfolio/work" 
               element={<Work />} 
             />
             <Route 
-              path="/MeeReactPortfolio/about" 
+              path="/Portfolio/about" 
               element={<About />} 
             />
           </Routes>

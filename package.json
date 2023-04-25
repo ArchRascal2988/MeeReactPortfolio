@@ -1,8 +1,8 @@
 {
-  "name": "llm-portfolio",
+  "name": "Portfolio",
   "version": "1.0.0",
   "main": "./client/src/index.js",
-  "homepage": "https://archrascal2988.github.io/MeeReactPortfolio",
+  "homepage": "https://archrascal2988.github.io/Portfolio",
   "scripts": {
     "start": "cd ./client && npm start",
     "build": "cd ./client && npm run build",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArchRascal2988/MeeReactPortfolio.git"
+    "url": "git+https://github.com/ArchRascal2988/Portfolio.git"
   },
   "license": "ISC",
   "dependencies": {
